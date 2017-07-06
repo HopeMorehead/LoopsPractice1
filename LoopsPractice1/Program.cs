@@ -77,35 +77,35 @@ namespace LoopsPractice1
 
             //start with the string "Once upon a time" and create an array called
 
-            string story = "once upon a time.";
-            //storyword using the split method.
-            string[] storyWord = story.Split();
+            /*     string story = "once upon a time.";
+                 //storyword using the split method.
+                 string[] storyWord = story.Split();
 
 
 
-            //Reverse the order of the elements in 
-            //the array and using a for loop,print each word
-            Array.Reverse(storyWord);
-            //   Console.WriteLine(story);
+                 //Reverse the order of the elements in 
+                 //the array and using a for loop,print each word
+                 Array.Reverse(storyWord);
+                 //   Console.WriteLine(story);
 
-            for (int i = 0; i < storyWord.Length; i++)
-            {
-                Console.WriteLine(storyWord[i]);
-            }
+                 for (int i = 0; i < storyWord.Length; i++)
+                 {
+                     Console.WriteLine(storyWord[i]);
+                 }
 
-            //add the product(multiplication)of 1 through 10 using a for loop
-            //print the product  to the screen.
+                 //add the product(multiplication)of 1 through 10 using a for loop
+                 //print the product  to the screen.
 
 
 
-            int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            int product = numbers[0];
-            for (int i = 0; i < numbers.Length; i++)
-            {
-                product = product * numbers[i];
-            }
+                 int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+                 int product = numbers[0];
+                 for (int i = 0; i < numbers.Length; i++)
+                 {
+                     product = product * numbers[i];
+                 }
 
-            Console.WriteLine(product);
+                 Console.WriteLine(product);*/
 
 
 
@@ -135,13 +135,13 @@ namespace LoopsPractice1
             ///  
 
 
-            string[] firstMonths = { "Jan", "Dog", "Mar", "Apr" };
-            // Always start with the keyword foreach
-            foreach (string month in firstMonths)
-            {
-                Console.WriteLine(month[0]);
-                Console.WriteLine(month.Length);
-            }
+            /*   string[] firstMonths = { "Jan", "Dog", "Mar", "Apr" };
+               // Always start with the keyword foreach
+               foreach (string month in firstMonths)
+               {
+                   Console.WriteLine(month[0]);
+                   Console.WriteLine(month.Length);
+               }*/
 
 
             //foreach loops allow the temporary variable to know to assign
@@ -205,20 +205,77 @@ namespace LoopsPractice1
             //Ask the user if they have another class they would like to add to their GPA calculation.
             //   using a do while loop, repeat the code if the user says "YES
 
-            Console.WriteLine("Is there a additonal class you would like to add?");
-            string userinput = Console.ReadLine();
-            Console.WriteLine("What grad did you get?");
-            string userinput2 = Console.ReadLine();
-            do
+            /*  
+             *   Console.WriteLine("Is there a additonal class you would like to add?");
+                 string userinput = Console.ReadLine();
+                 Console.WriteLine("What grad did you get?");
+                 string userinput2 = Console.ReadLine();
+                 do
+                 {
+
+                     Console.WriteLine("Grade added!");
+
+
+
+                 } while (userinput2 == "YES");*/
+
+
+            // nested loopS
+            //LOOP inside of another loop
+            //The inner loop is executed more times than the outer loopes
+
+            /*  string classone = "yes";
+              bool exit = false;
+
+              do
+              {
+
+              }
+              while (classone == "yes");*/
+
+
+            //create a nested loop structure that prints:
+            //1234
+            //1234
+
+            /*   for(int rows = 1; rows <=2; rows++)
+               {
+                   for(int columns =1; columns<=4;  columns++)
+                   {
+                       Console.Write(columns);
+                   }
+                   Console.WriteLine();*/
+
+            //Print a Triangle
+            //Outer loop will go line by line
+            // THe inner loop will go over different elements in the line.
+
+            //Result:
+            //1
+            //12
+            //123
+            //1234....
+            for (int rows = 0; rows < 1; rows++)
             {
+                Console.WriteLine(rows);
+                for (int columns = 1; columns <= 2; columns++)
+                {
+                    Console.WriteLine(columns);
+                    for (int wall = 2; rows < 3; rows++)
+                    {
+                        Console.WriteLine(rows);
+                        for (int rope = 3; columns <= 4; columns++)
+                        {
 
-                Console.WriteLine("Grade added!");
+                            Console.WriteLine(columns);
 
 
-
-            } while (userinput2 == "YES");
+                        }
+                    }
+                }
+            }
         }
-    }
+    }           
 }
 
 
