@@ -81,10 +81,11 @@ namespace LoopsPractice1
             //storyword using the split method.
             string[] storyWord = story.Split();
 
-           
 
-            //Reverse the order of the elements in
-             Array.Reverse(storyWord);
+
+            //Reverse the order of the elements in 
+            //the array and using a for loop,print each word
+            Array.Reverse(storyWord);
          //   Console.WriteLine(story);
 
             for (int i = 0; i < storyWord.Length; i++)
@@ -92,15 +93,73 @@ namespace LoopsPractice1
                 Console.WriteLine(storyWord[i]);
             }
 
-            //the array and using a for loop,print each word
             //add the product(multiplication)of 1 through 10 using a for loop
             //print the product  to the screen.
 
 
 
+            int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            int product = numbers[0];
+            for (int i = 0; i < numbers.Length; i++) 
+            {
+                product = product * numbers[i];
+            }
+
+            Console.WriteLine(product);
 
 
 
+
+
+            /*  int product = 1;
+
+              for (int i = 1; i <= 10; i++)
+              {
+                  product = product * i;
+              }
+
+
+              Console.WriteLine(product); */
+
+
+
+            //foreach loop- used to iterate over a collection (Exception. list or array)
+            //You can think of the structure of a foreach loop as the statement:
+            //For each item in the collection , do something
+
+            // foreach(datatype variable in collection)
+            // {
+            //   do something
+
+            ///  }
+            ///  
+
+
+            string[] firstMonths = { "Jan", "Dog", "Mar", "Apr"  };
+           // Always start with the keyword foreach
+           foreach(string month in firstMonths)
+            {
+                Console.WriteLine(month[0]);
+                Console.WriteLine(month.Length);
+            }
+
+
+            //foreach loops allow the temporary variable to know to assign
+            //itself to each element in the collection(like an array), one at a times.
+
+            //create an array of 6 musicians (bands or solo artists)
+            //using a foreach loop,print each musician's name
+
+            string[] musicians = { "Micheal Jackson", "Flyleaf", "Breaking Benjamin", "Batman", "DaftPunk", "Hope" };
+
+
+
+            foreach (string singers in musicians)
+            {
+                Console.WriteLine(singers[0]);
+                Console.WriteLine(singers.Length);
+                Console.WriteLine(singers);
+            }
 
 
 
