@@ -58,22 +58,22 @@ namespace LoopsPractice1
             //  }
             //splits on the spaces
             //does the space have a index value
-          /*  string greeting = "My name is little Bill";
-            string[] wordsInGreeting = greeting.Split();//for loop to print the words
-            for(int i =0; i< wordsInGreeting.Length; i++)
-            {
-                Console.WriteLine(wordsInGreeting[i]);
-            }*/
+            /*  string greeting = "My name is little Bill";
+              string[] wordsInGreeting = greeting.Split();//for loop to print the words
+              for(int i =0; i< wordsInGreeting.Length; i++)
+              {
+                  Console.WriteLine(wordsInGreeting[i]);
+              }*/
 
-        /*    //create an array called days with the elements monday tuesday and wednesday
-            string[] days = { "Monday", "Tuesday", "Wednesday" };
-            //using a for loop print the elements of the days array.
-            for (int counter = 0; counter< days.Length; counter++)
-            {
-                Console.WriteLine(days[counter]);
-            } */
+            /*    //create an array called days with the elements monday tuesday and wednesday
+                string[] days = { "Monday", "Tuesday", "Wednesday" };
+                //using a for loop print the elements of the days array.
+                for (int counter = 0; counter< days.Length; counter++)
+                {
+                    Console.WriteLine(days[counter]);
+                } */
 
-         // string[] storyWord = { story };
+            // string[] storyWord = { story };
 
             //start with the string "Once upon a time" and create an array called
 
@@ -86,7 +86,7 @@ namespace LoopsPractice1
             //Reverse the order of the elements in 
             //the array and using a for loop,print each word
             Array.Reverse(storyWord);
-         //   Console.WriteLine(story);
+            //   Console.WriteLine(story);
 
             for (int i = 0; i < storyWord.Length; i++)
             {
@@ -100,7 +100,7 @@ namespace LoopsPractice1
 
             int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
             int product = numbers[0];
-            for (int i = 0; i < numbers.Length; i++) 
+            for (int i = 0; i < numbers.Length; i++)
             {
                 product = product * numbers[i];
             }
@@ -135,9 +135,9 @@ namespace LoopsPractice1
             ///  
 
 
-            string[] firstMonths = { "Jan", "Dog", "Mar", "Apr"  };
-           // Always start with the keyword foreach
-           foreach(string month in firstMonths)
+            string[] firstMonths = { "Jan", "Dog", "Mar", "Apr" };
+            // Always start with the keyword foreach
+            foreach (string month in firstMonths)
             {
                 Console.WriteLine(month[0]);
                 Console.WriteLine(month.Length);
@@ -150,31 +150,76 @@ namespace LoopsPractice1
             //create an array of 6 musicians (bands or solo artists)
             //using a foreach loop,print each musician's name
 
-            string[] musicians = { "Micheal Jackson", "Flyleaf", "Breaking Benjamin", "Batman", "DaftPunk", "Hope" };
+            /*  string[] musicians = { "Micheal Jackson", "Flyleaf", "Breaking Benjamin", "Batman", "DaftPunk", "Hope" };
 
 
 
-            foreach (string singers in musicians)
+              foreach (string singers in musicians)
+              {
+                  Console.WriteLine(singers[0]);
+                  Console.WriteLine(singers.Length);
+                  Console.WriteLine(singers);
+              }
+
+              //while loop is used when you want a chunk of code to run only if a condition is met first.
+              //while something is TRUE, do this thing.
+
+              string firstName = Console.ReadLine();
+              while (firstName.ToUpper() == "Daniel") 
+              {
+                  Console.WriteLine("Dude, I'm amazing");
+                  break;
+              }
+
+              Console.WriteLine("Do you want to play the game? YES/NO");
+              string playAgain = Console.ReadLine().ToUpper();
+              while(playAgain.ToUpper() == "YES")
+              {
+                  Console.WriteLine("It's a rematch Yes/No");
+                  playAgain = Console.ReadLine();
+              };*/
+
+            //A Do-while loop is similar to a while loop, however 
+            //the do-won i hile loop is used when you want a chunk of code to run
+            //at least once, but repeat only if the while condition is met
+            //The structure of a do-while loop looks like this:
+
+            /* do
+             {
+                 do something
+             }
+             while (condition);*/
+            /*   string playAgain;
+               do
+               {
+                   Console.WriteLine("Do you want to play the game? Yes/No");
+                   Console.WriteLine("Great game");
+                   Console.WriteLine("Do you want to play again? YES/NO");
+                   playAgain = Console.ReadLine().ToUpper();
+               }
+               while (playAgain == "YES");*/
+
+            //Ask the user for the class (in school) that they would like to add to their 
+            //GPA calculation.
+            //Ask the user for the letter grade for the class (no + or -)
+            //Ask the user if they have another class they would like to add to their GPA calculation.
+            //   using a do while loop, repeat the code if the user says "YES
+
+            Console.WriteLine("Is there a additonal class you would like to add?");
+            string userinput = Console.ReadLine();
+            Console.WriteLine("What grad did you get?");
+            string userinput2 = Console.ReadLine();
+            do
             {
-                Console.WriteLine(singers[0]);
-                Console.WriteLine(singers.Length);
-                Console.WriteLine(singers);
-            }
 
-            //while loop is used when you want a chunk of code to run only if a condition is met first.
-            //while something is TRUE, do this thing.
-
-            string firstName = Console.ReadLine();
-            while (firstName.ToUpper() == "Daniel") 
-            {
-                Console.WriteLine("Dude, I'm amazing");
-                break;
-            }
+                Console.WriteLine("Grade added!");
 
 
 
-
-
+            } while (userinput2 == "YES");
         }
     }
 }
+
+
+                
