@@ -161,10 +161,15 @@ namespace LoopsPractice1
                 Console.WriteLine(singers);
             }
 
+            //while loop is used when you want a chunk of code to run only if a condition is met first.
+            //while something is TRUE, do this thing.
 
-
-
-
+            string firstName = Console.ReadLine();
+            while (firstName.ToUpper() == "Daniel") 
+            {
+                Console.WriteLine("Dude, I'm amazing");
+                break;
+            }
 
 
 
